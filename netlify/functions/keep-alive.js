@@ -1,4 +1,4 @@
-const SUPABASE_URL = process.env.SUPABASE_URL || process.env.VITE_SUPABASE_URL;
+const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL;
 
 export const handler = async () => {
   if (!SUPABASE_URL) {
